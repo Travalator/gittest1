@@ -106,3 +106,4 @@ optimizer = torch.optim.Adam(gnn_model.parameters(), lr=0.001)
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = decay_step, gamma = decay_factor)
 train_loss_hist, val_loss_hist, grads = train_model(gnn_model, train_dataloader, val_dataloader, device, 2, optimizer, scheduler, cfg, collect_grads=True)
 print(grads)
+
