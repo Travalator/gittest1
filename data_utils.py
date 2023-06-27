@@ -14,33 +14,6 @@ from torch_geometric.utils import (
     to_torch_csr_tensor,
 )
 
-# class FlowDataset(Dataset):
-
-#     def __init__(self, data_dir, num_files,do_read = False, data_source = None, transform=None, pre_transform=None, pre_filter=None):
-#         super().__init__(data_dir, transform, pre_transform, pre_filter)
-    
-#         self.data_dir = data_dir
-#         self.num_files = num_files
-#         self.file_list = None
-#         if do_read:
-#         # print(dataset_source)
-#             with open(data_source, 'r') as f:
-#                 #print(num_files)
-#                 self.file_list = f.read().splitlines()
-#                 self.file_list = file_list[:num_files]
-#         else:
-#                 self.file_list = os.listdir(os.path.join(self.data_dir, 'nodes'))
-        
-
-#         def len(self):
-#             return self.num_files
-        
-#         def get(self,idx):
-#             file_name = self.file_list[idx]
-
-#             nodes = pd.read_csv(os.path.join(self.data_dir, 'nodes', file_name)).values
-#             #edges
-
 
 def calc_norm_params(data_dir, file_list, num_fields = 4, geom_dim = 2):  #norm parameters for flow fields, coordinates and boundary cond. in nodes
      
