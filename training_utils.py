@@ -6,7 +6,7 @@ from torch_geometric.loader import DataLoader
 from torch_geometric.data import Data
 
 
-print('dffff')
+
 
 
 def train_model(model, train_dataloader, val_dataloader, device, num_epochs, optimizer, scheduler, cfg, collect_grads=False, comp_weigts = False, wait_epochs = 2):
