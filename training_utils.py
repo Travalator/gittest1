@@ -42,7 +42,7 @@ def train_model(model, train_dataloader, val_dataloader, device, num_epochs, opt
 
     start = torch.cuda.Event(enable_timing=True)
     end = torch.cuda.Event(enable_timing=True)
-    
+    print('alah akbar')
     start.record()
     model.to(device)
     
